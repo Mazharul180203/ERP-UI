@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import axios from 'axios';
-import { BASE_URL } from '../../../../config/config.js';
 import toast from 'react-hot-toast';
 import { Spin, Table, Input, Button, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import Highlighter from 'react-highlight-words';
+import {BASE_URL} from "../../../config.js";
 
 const ViewAllCategoryPage = () => {
     const [loading, setLoading] = useState(false);

@@ -3,8 +3,8 @@ import { Input, Spin } from 'antd';
 import { Form, Button } from 'react-bootstrap';
 import toast from 'react-hot-toast';
 import axios from 'axios';
-import { BASE_URL } from '../../../../config/config.js';
 import ValidationHelper from "../../utilitiy/ValidationUtlity.js";
+import {BASE_URL} from "../../../config.js";
 
 const AddNewCategoryPage = () => {
     const [loading, setLoading] = useState(false);

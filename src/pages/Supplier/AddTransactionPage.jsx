@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import toast from "react-hot-toast";
 import axios from "axios";
-import {BASE_URL} from "../../../../config/config.js";
 import {Button, Form, Input, Select, Spin} from "antd";
 import moment from "moment/moment.js";
+import {BASE_URL} from "../../../config.js";
 
 
 const AddTransactionPage = () => {

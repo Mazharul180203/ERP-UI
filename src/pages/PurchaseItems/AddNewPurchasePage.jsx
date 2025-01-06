@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form, Select, Spin, Input, Table } from "antd";
 import axios from "axios";
-import { BASE_URL } from "../../../../config/config.js";
 import toast from "react-hot-toast";
 import moment from "moment";
+import {BASE_URL} from "../../../config.js";
 
 const { Option } = Select;
 

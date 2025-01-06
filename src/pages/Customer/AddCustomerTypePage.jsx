@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import ValidationHelper from "../../utilitiy/ValidationUtlity.js";
 import toast from "react-hot-toast";
 import axios from "axios";
-import {BASE_URL} from "../../../../config/config.js";
 import {Button, Form} from "react-bootstrap";
 import {Input, Spin} from "antd";
+import {BASE_URL} from "../../../config.js";
 
 const AddCustomerTypePage = () => {
     const [loading, setLoading] = useState(false);

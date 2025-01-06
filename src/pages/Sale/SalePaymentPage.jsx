@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import axios from "axios";
-import {BASE_URL} from "../../../../config/config.js";
 import toast from "react-hot-toast";
 import {Button, Form, Input, Select, Spin} from "antd";
 import moment from "moment";
+import {BASE_URL} from "../../../config.js";
 
 const SalePaymentPage = () => {
     const [loading, setLoading] = useState(false);

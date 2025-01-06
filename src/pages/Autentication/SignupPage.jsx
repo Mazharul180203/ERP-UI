@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import axios from "axios";
-import {BASE_URL} from "../../../../config/config.js";
 import {FailAlert, SuccessAlert} from "../../utilitiy/AlertUtility.jsx";
+import {BASE_URL} from "../../../config.js";
 
 const SignupPage = () => {
 

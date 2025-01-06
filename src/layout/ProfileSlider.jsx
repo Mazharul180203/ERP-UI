@@ -1,8 +1,8 @@
 import React from 'react';
 import { Avatar, Button } from 'antd';
 import { LogoutOutlined, UserOutlined } from '@ant-design/icons';
-import {BASE_URL} from "../../../config/config.js";
 import axios from "axios";
+import {BASE_URL} from "../../config.js";
 
 const ProfileSlider = () => {
     return (

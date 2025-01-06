@@ -1,10 +1,10 @@
 import React, {useEffect, useRef, useState} from 'react';
 import axios from "axios";
-import {BASE_URL} from "../../../../config/config.js";
 import toast from "react-hot-toast";
 import {Button, Input, Space, Spin, Table} from "antd";
 import {SearchOutlined} from "@ant-design/icons";
 import Highlighter from "react-highlight-words";
+import {BASE_URL} from "../../../config.js";
 
 const ViewAllProductPage = () => {
     const [loading, setLoading] = useState(false);

@@ -3,7 +3,8 @@ import { Form, Input, Select, Button, Spin } from 'antd';
 import toast from 'react-hot-toast';
 import ValidationHelper from "../../utilitiy/ValidationUtlity.js";
 import axios from "axios";
-import {BASE_URL} from "../../../../config/config.js";
+import {BASE_URL} from "../../../config.js";
+
 
 const { Option } = Select;
 
