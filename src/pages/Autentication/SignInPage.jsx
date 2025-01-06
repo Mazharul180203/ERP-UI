@@ -14,14 +14,10 @@ const LoginForm = () => {
         const password = formData.get('password');
         let res = await axios.post(`${BASE_URL}/api/v1/VerifyLogin`,{email,password},{withCredentials:true})
 
+        console.log("Result :",res.data.status)
         if(res.data['status'] === "success"){
-            if(res.data['data'] === "Login Successfully") {
-                let response = await SuccessAlert(res.data['data'])
-                if (response) {
-                    window.location.reload()
-                }
-            }
-        }else if(res.data['status'] === "invalid"){
+            window.location.reload();
+        }else if(res.data['status'] === "fail"){
                 await FailAlert(res.data['data'])
             }
         }

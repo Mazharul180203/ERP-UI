@@ -32,39 +32,50 @@ import SalePayment from "../components/Sale/SalePayment.jsx";
 
 
 const Webroute = () => {
-return(
-    <BrowserRouter >
-        <Routes>
-            <Route path="/" element={<DashboardPage/>}/>
-            <Route path="/category" element={<CategoryPage/>}/>
-            <Route path="/category/addNew" element={<AddNewCategory/>}/>
-            <Route path="/category/viewAll" element={<ViewAllCategory/>}/>
-            <Route path="/brand" element={<BrandPage/>}/>
-            <Route path="/brand/addNew" element={<AddNewBrand/>}/>
-            <Route path="/brand/viewAll" element={<ViewAllBrand/>}/>
-            <Route path="/product" element={<ProductPage/>}/>
-            <Route path="/product/addProduct" element={<AddNewProduct/>}/>
-            <Route path="/product/allProduct" element={<ViewAllProduct/>}/>
-            <Route path="/supplier" element={<SupplierPage/>}/>
-            <Route path="/supplier/addSupplier" element={<AddSupplier/>}/>
-            <Route path="/supplier/allSupplier" element={<AllSupplier/>}/>
-            <Route path="/supplier/addTransaction" element={<AddTransaction/>}/>
-            <Route path="/supplier/allTransaction" element={<AllTransaction/>}/>
-            <Route path="/purchaseitems" element={<PurchaseItems/>}/>
-            <Route path="/purchaseitems/newPurchase" element={<AddNewPurchase/>}/>
-            <Route path="/purchaseitems/allPurchase" element={<AllPurchase/>}/>
-            <Route path="/customer" element={<CustomerPage/>}/>
-            <Route path="/customer/addType" element={<AddCustomerType/>}/>
-            <Route path="/customer/addNew" element={<AddNewCustomer/>}/>
-            <Route path="/customer/viewAll" element={<ViewAllCustomer/>}/>
-            <Route path="/sale" element={<SaleItemsPage/>}/>
-            <Route path="/sale/addSale" element={<AddNewSale/>}/>
-            <Route path="/sale/allSale" element={<AllSale/>}/>
-            <Route path="/sale/payment" element={<SalePayment/>}/>
-        </Routes>
-    </BrowserRouter>
-    )
+    if(!ValidationHelper.isLogin()){
+        return(
+            <BrowserRouter >
+                <Routes>
+                    <Route path="/" element={<SignInPage/>}/>
+                    <Route path="/signup" element={<SignupPage/>}/>
+                </Routes>
+            </BrowserRouter>
+        );
 
+    }else {
+        return (
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<DashboardPage/>}/>
+                    <Route path="/category" element={<CategoryPage/>}/>
+                    <Route path="/category/addNew" element={<AddNewCategory/>}/>
+                    <Route path="/category/viewAll" element={<ViewAllCategory/>}/>
+                    <Route path="/brand" element={<BrandPage/>}/>
+                    <Route path="/brand/addNew" element={<AddNewBrand/>}/>
+                    <Route path="/brand/viewAll" element={<ViewAllBrand/>}/>
+                    <Route path="/product" element={<ProductPage/>}/>
+                    <Route path="/product/addProduct" element={<AddNewProduct/>}/>
+                    <Route path="/product/allProduct" element={<ViewAllProduct/>}/>
+                    <Route path="/supplier" element={<SupplierPage/>}/>
+                    <Route path="/supplier/addSupplier" element={<AddSupplier/>}/>
+                    <Route path="/supplier/allSupplier" element={<AllSupplier/>}/>
+                    <Route path="/supplier/addTransaction" element={<AddTransaction/>}/>
+                    <Route path="/supplier/allTransaction" element={<AllTransaction/>}/>
+                    <Route path="/purchaseitems" element={<PurchaseItems/>}/>
+                    <Route path="/purchaseitems/newPurchase" element={<AddNewPurchase/>}/>
+                    <Route path="/purchaseitems/allPurchase" element={<AllPurchase/>}/>
+                    <Route path="/customer" element={<CustomerPage/>}/>
+                    <Route path="/customer/addType" element={<AddCustomerType/>}/>
+                    <Route path="/customer/addNew" element={<AddNewCustomer/>}/>
+                    <Route path="/customer/viewAll" element={<ViewAllCustomer/>}/>
+                    <Route path="/sale" element={<SaleItemsPage/>}/>
+                    <Route path="/sale/addSale" element={<AddNewSale/>}/>
+                    <Route path="/sale/allSale" element={<AllSale/>}/>
+                    <Route path="/sale/payment" element={<SalePayment/>}/>
+                </Routes>
+            </BrowserRouter>
+        )
+    }
 };
 
 export default Webroute;
