@@ -1,88 +1,70 @@
-ERP System Frontend 
+# ERP System Frontend
 
-A modern, secure, and scalable ERP Frontend Application designed for businesses that require efficient management of customers, stores, products, employees, reporting, and real-time market-driven pricing.
+## ⚡ Overview
 
-🚀 Key Features
-🔐 Role-Based Access Control (RBAC)
+This ERP Frontend system delivers a smooth, role-secured, and feature-rich experience, connecting seamlessly with the backend to ensure accuracy, speed, and real-time performance.
 
-Secure login with role-level permissions
+Designed for retail, wholesale, and enterprise-level businesses, the system ensures secure access, smart workflows, and data-driven insights.
 
-Different dashboards/features based on user roles
+## 🚀 Core Features
 
-Employee-level access restriction for sensitive operations
+### 🔐 Role-Based Access Control (RBAC)
+- Secure login with JWT-based authentication
+- Permissions assigned per role
+- Flexible role hierarchy for admin, manager, employee
+- Sensitive operations protected by strict access rules
 
-🏪 Store Management
+### 🏪 Store Management
+- Manage single or multiple store branches
+- Track store-wise stock, purchase, and sales activities
+- Real-time synchronization with backend inventory
+- Dashboard insights for store performance
 
-Manage multiple stores from a single interface
+### 👥 Customer Tracking System
+A powerful customer management module with complete financial visibility:
+- Track buy & sell activity
+- Maintain credit/debit ledger
+- Automatic calculation of total buy/sell amounts
+- Support for permanent & temporary customers
+- Customer due history & outstanding balance tracking
+- Instant reporting of customer-wise performance
 
-Track store-wise stock, purchases, and sales
+### 📦 Product Management
+- Update product details dynamically
+- Maintain real-time market-driven prices
+- Auto price updates for selling rates
+- Built-in unit converter for seamless measurements
+- Track product profitability and adjust pricing smartly
 
-Auto-sync with backend inventory
+### 👨‍💼 Employee Management
+- Add/update/manage employee profiles
+- Assign role & permission per employee
+- Track user activities across the system
+- Restrict access to sensitive features
 
-👥 Customer Tracking System
+### 💳 Due & Payment Tracking
+- Company due tracking
+- Customer outstanding payment management
+- Auto calculation of credit/debit adjustments
+- Integrated financial tracking for accuracy
 
-Comprehensive individual customer management:
+### 🧾 Billing & Reporting
+- Generate and download bills, receipts, and reports
+- Customer-wise detailed history reports
+- Daily, weekly, and monthly sales reports
+- Integrated profit/loss visuals powered by backend data
+- Print-ready invoice and bill formats
 
-Track buy & sell history
+### 📊 Real-Time Sell Rate Maintenance
+- Automatically update selling rates based on market price
+- Ensures consistent profit margin
+- Prevents unauthorized manipulation through RBAC
+- Smart UI for price comparison and adjustment
 
-Maintain credit/debit records
+### 🔒 Security Features
+- Protected routes
+- Enforced role-based restrictions
+- Token-based authentication
+- Sensitive actions require elevated permissions
+- Prevents unauthorized access or data modification
 
-Calculate total buy/sell amounts
-
-Support for permanent and temporary customers
-
-Maintain outstanding payments and due history
-
-📦 Product Management
-
-Update product details with real-time market value
-
-Set new selling price dynamically
-
-Maintain product profitability
-
-Automated unit converter for various measurement units
-
-👨‍💼 Employee Management
-
-Add, update, and manage employee records
-
-Assign role-based permissions
-
-Track employee activities within the system
-
-💳 Due & Payment Tracking
-
-Track company-level dues
-
-Track customer outstanding balances
-
-Automated calculation for credit/debit adjustments
-
-🧾 Billing & Reporting
-
-Generate downloadable bills, receipts, and reports
-
-Customer history reports
-
-Daily/Monthly sales reports
-
-Profit/Loss insights (frontend integrated with backend data)
-
-📊 Real-Time Sell Rate Maintenance
-
-Auto-update product selling rates based on market pricing
-
-Ensures correct profit margin
-
-Prevents unauthorized price manipulation (role based)
-
-🔒 Security
-
-Protected routes
-
-Sensitive actions restricted via RBAC
-
-Token-based authentication (frontend integrated with backend API)
-
-Prevents unauthorized access or data modification
